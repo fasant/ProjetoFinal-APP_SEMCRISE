@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.InserirPostoFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Posto"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Localização"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_produto">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gasolina"
+            android:id="@+id/radioButtonGasolina"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alcool"
+            android:id="@+id/radioButtonAlcool"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ePreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_gravity="center"
+        android:id="@+id/btSalvarPosto"
+        android:clickable="true" />
+
+</LinearLayout>
